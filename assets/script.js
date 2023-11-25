@@ -1,9 +1,11 @@
 let tip_percent=document.querySelectorAll('.tips')
+let custom_tip=document.querySelector("#custom")
+console.log(custom_tip);
 tip_percent.forEach(function(val){
     val.addEventListener('click',handleTipClick)
 })
 
-let tipValue=0.05;
+let tipValue=0;
 function handleTipClick(event){
     tip_percent.forEach(function(val){
         val.classList.remove("active-tip")
@@ -14,9 +16,6 @@ function handleTipClick(event){
     })
     // console.log(tipValue)
 }
-
-
-
 document.addEventListener('click',calculate_tip)
 function calculate_tip(event){
     let amount=parseFloat(document.getElementById('bill').value)
@@ -32,11 +31,7 @@ function calculate_tip(event){
     let tip=(amount*tipValue)/100
     
     let totalBill=amount+tip
-
     let billPerPerson=totalBill/people
-    // console.log(tip)
-    // console.log(totalBill)
-    // console.log(billPerPerson)
     let tip_charged=document.getElementById('tip-charged')
     tip_charged.innerText=tip
     

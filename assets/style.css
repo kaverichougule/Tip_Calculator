@@ -27,6 +27,11 @@ body{
     left: 50%;
     box-shadow: 0 30px 50px rgba(0,0,0,0.1);
 }
+.container h2{
+    text-align: center;
+    border-bottom: 1px solid #6f6df4;
+    padding-bottom: 10px;
+}
 .wrapper{
     display: flex;
     align-items: center;
@@ -135,7 +140,7 @@ section:last-child .lbl{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width: 100%;
     color: white;
     background-color: #0c0b58;
     border: none;
