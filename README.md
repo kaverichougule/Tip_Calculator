@@ -1,3 +1,3 @@
 # Tip_Calculator
 
-Hosted Link: https://kaverichougule.github.io/Tip_Calculator/
+Hosted Link: https://fabulous-queijadas-57f183.netlify.app/
